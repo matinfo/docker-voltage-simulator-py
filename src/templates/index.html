@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0020)http://192.168.0.77/ -->
+<html lang="fr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="Generator" content="ChrisB">
+    <meta http-equiv="refresh" content="1">
+    <title>PV Webserver - simulator</title>
+</head>
+<body nof="(MB=(DefaultMasterborder, 65, 60, 150, 10), L=(HomeLayout, 700, 600))" bgcolor="#EAF7F7" text="#000000" link="#0033CC" vlink="#990099" alink="#FF0000" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<form method="post" action="">
+<table cellspacing="0" cellpadding="0" width="770" nof="ly">
+<tbody><tr><td height="5"></td></tr>
+<tr><td width="190" height="55"></td>
+<td width="400">
+  <font face="Arial,Helvetica,Geneva,Sans-serif,sans-serif" size="+3">
+  PIKO 5.5
+<br><font size="+1">                 
+  PikoBello (255)
+</font>
+<br><font size="+1" id="refresh-date">{{ data['time'] }}</font>
+</font>
+</td>
+<td><svg width="120px" title="Leopold Kostal GmbH &amp; Co. KG" xmlns="http://www.w3.org/2000/svg" version="1" width="1024" height="222" viewBox="-1.063 -1.063 173.197 37.575"><path d="M129.822 15.127l1.365 5.115h-2.707l1.342-5.115zm2.79-15.012c2.14 0 3.45.744 4.022 2.552 1.188 3.58 8.278 25.654 9.587 29.616.72 2.11-.931 3.072-2.241 3.072l-6.338.002c-.837 0-1.85-.566-2.195-1.612l-.82-2.566c-.12-.312-.312-.507-.657-.507h-8.274c-.344 0-.536.195-.656.507l-.82 2.566c-.344 1.046-1.358 1.612-2.193 1.612l-6.34-.002c-1.31 0-2.962-.962-2.24-3.072 1.305-3.962 8.397-26.037 9.585-29.616.572-1.808 1.883-2.552 4.022-2.552h5.558M114.83.142c1.742.008 3.089 1.496 3.089 3.093v4.319c.058 1.598-1.42 3.136-3.136 3.136l-3.362.003c-.415.059-.75.387-.75.752v20.823c0 1.657-1.258 3.099-3.068 3.099h-5.061c-1.565 0-3.128-1.473-3.128-3.099l-.022-20.823c0-.342-.318-.752-.774-.752h-3.325c-1.549 0-3.098-1.458-3.098-3.075v-4.42c0-1.594 1.577-3.056 3.125-3.056h19.51M7.67.129c2 0 3.43 1.56 3.43 3.43v7.051L20.903.9c.627-.477 1.442-.738 2.26-.77l6.754.002c1.189.16 2.067 1.128 2.438 2.18.638 2.326-1.014 3.43-2.09 4.514L19.395 17.72c-.126.114-.085.3 0 .397l12.053 12.046c2.094 2.057 1.175 5.179-2.204 5.179l-7.056.02c-.925 0-1.44-.539-2.183-1.292l-8.904-8.865-.013 6.726c0 1.808-1.659 3.423-3.437 3.438H3.452C1.75 35.37 0 33.8 0 31.932L.001 3.571C.001 1.85 1.464.129 3.443.129H7.67" fill="#1E467D" fill-rule="evenodd"></path><path d="M39.544 17.724a6.82 6.82 0 1 1 13.642-.001 6.82 6.82 0 0 1-13.642.001zm-10.903 0C28.64 7.934 36.576 0 46.365 0 56.154 0 64.09 7.935 64.09 17.724c0 9.788-7.935 17.724-17.724 17.724-9.789 0-17.724-7.936-17.724-17.724M79.547 35.357H67.9c-1.51-.014-3.095-1.42-3.095-3.112l.005-4.524c0-1.796 1.415-3.096 3.09-3.11l10.976-.002c.427 0 .798-.394.798-.821a.767.767 0 0 0-.18-.498c-.148-.173-.287-.431-.616-.5-.618-.343-7.675-.775-10.447-3.611-2.772-2.571-4.333-6.713-3.187-10.834 1.19-4.461 4.97-8.126 11.173-8.203h11.38A3.13 3.13 0 0 1 90.9 3.208v4.38c-.04 1.551-1.773 3.065-3.517 3.104l-10.466.003c-.262 0-.61.202-.594.554.016.305.26.48.718.564 6.166 1.13 6.723 1.507 6.735 1.512a11.43 11.43 0 0 1 7.284 10.653c0 6.31-5.203 11.38-11.513 11.38M155.504.103c1.706 0 3.046 1.505 3.046 3.09v20.63c0 .34.282.622.565.622h8.874c1.838 0 3.023 1.272 3.08 3.052 0 0-.01 2.63 0 4.776 0 1.724-1.357 3.053-3.08 3.053l-17.48-.004c-1.647 0-3.108-1.28-3.108-2.986V3.192c-.002-1.581 1.46-3.088 3.108-3.09h4.995" fill="#1E467D" fill-rule="evenodd"></path><path d="M129.822 6.454l5.303 16.085c.106.286 0 .602-.483.602h-9.618c-.483 0-.588-.316-.483-.602l5.281-16.085zm.023-3.252l3.356-.003c.243 0 .451.182.513.423l9.09 28.08c.128.326.036.566-.354.566h-3.69c-.361.03-.591-.087-.731-.596l-1.152-3.56c-.092-.272-.27-.543-.723-.543h-12.64c-.453 0-.634.271-.724.543l-1.152 3.56c-.158.453-.37.627-.732.596h-3.69c-.39 0-.483-.262-.353-.566l9.09-28.08a.545.545 0 0 1 .512-.423l3.38.003M114.822 3.566V7.27a.36.36 0 0 1-.352.333h-6.114a.804.804 0 0 0-.796.795v23.52c0 .183-.14.345-.333.345h-4.378c-.151 0-.354-.15-.344-.344V8.389c.011-.377-.398-.785-.786-.785h-6.065c-.183-.011-.354-.152-.354-.333V3.56c0-.16.153-.339.357-.339l18.813-.007c.186 0 .352.167.352.352M3.432 32.264c-.188.015-.344-.127-.344-.344V3.57c0-.173.134-.344.366-.344H7.67c.182 0 .333.151.337.345l.003 13.512c-.006.273.383.665.692.341l14.03-13.963c.122-.135.275-.246.512-.238h5.637c.305 0 .135.282.05.357L14.986 17.557c-.162.184-.186.317-.004.543l13.842 13.831c.118.107.08.333-.122.333H22.91c-.271 0-.454-.075-.608-.264L8.66 18.397c-.227-.242-.634-.03-.65.378V31.92c0 .188-.15.344-.351.344M46.394 3.127c-8.072 0-14.616 6.543-14.616 14.616 0 8.071 6.544 14.615 14.616 14.615 8.071 0 14.615-6.544 14.615-14.615 0-8.073-6.544-14.616-14.615-14.616zm0 24.545c-5.484 0-9.93-4.446-9.93-9.93s4.446-9.929 9.93-9.929c5.483 0 9.929 4.445 9.929 9.93 0 5.483-4.446 9.929-9.93 9.929M79.588 32.296l-11.175-.02c-.226 0-.513-.287-.498-.528v-3.516c-.015-.242.211-.498.462-.516h10.36c2.21 0 4.11-1.8 4.11-4.01a4 4 0 0 0-3.112-3.901c-.768-.228-1.532-.283-2.297-.457-3.196-.509-6.829-1.306-8.411-4.375-1.37-2.114-1.264-5.439-.085-7.648 1.136-2.092 3.447-3.809 5.985-4.117l1.487.018h10.96c.224.01.397.172.397.377v3.603c0 .232-.13.387-.398.387l-10.682-.004c-1.973 0-3.604 1.596-3.604 3.568 0 1.248.646 2.346 1.616 2.985.943.54 2.054.726 3.161.913.725.122 2.583.531 3.017.647 0 0 1.584.36 2.496.832 3.03 1.567 4.584 4.19 4.584 7.444 0 4.601-3.772 8.318-8.373 8.318M155.447 3.537l-.006 23.395c0 .34.226.593.593.593h11.418c.34 0 .594.255.567.593v3.562a.64.64 0 0 1-.595.593h-16.45c-.253 0-.48-.226-.48-.593l-.005-28.143c.03-.172.2-.345.358-.345h4.242c.172 0 .358.159.358.345" fill="#fff" fill-rule="evenodd"></path></svg></td>
+</tr>
+</tbody></table>
+
+<font face="Arial,Helvetica,Geneva,Sans-serif,sans-serif">
+<table border="0" width="100%"><tbody><tr>
+<td width="150"></td>
+<td> <hr> </td>
+</tr></tbody></table>
+<table cellspacing="0" cellpadding="0" width="770">
+<tbody><tr><td></td></tr>
+<tr>
+<td width="190"></td>
+<td colspan="2">
+  <b>puissance AC</b></td>
+<td>&nbsp;</td>
+<td>
+  <b>énergie</b></td></tr>
+<tr><td height="10"></td></tr>
+
+<tr>
+<td width="190"></td>
+<td width="100">
+  actuel</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['power'] }}</td>
+<td width="140">&nbsp; W</td>
+<td width="100">
+  énergie totale</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+  66333</td>
+<td width="50">&nbsp; kWh</td>
+<td>&nbsp;</td></tr>
+<tr height="2"><td></td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  &nbsp;</td>
+<td width="70" align="right">
+  &nbsp;</td>
+<td width="140">&nbsp;</td>
+<td width="100">
+  énergie par jour</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+  6.02</td>
+<td width="50">&nbsp; kWh</td>
+<td>&nbsp;</td></tr>
+<tr height="5"><td></td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  état</td>
+<td colspan="4">
+  arrêt</td>
+<td>&nbsp;</td></tr>
+<tr height="8"><td></td></tr>
+<tr><td colspan="7">
+<table align="top" width="100%"><tbody><tr>
+<td width="182"></td>
+<td><hr size="1"></td></tr>
+<tr><td height="5"></td></tr></tbody></table>
+</td></tr>
+<tr>
+<td width="190"></td>
+<td colspan="2">
+  <b>générateur PV</b></td>
+<td width="140">&nbsp;</td>
+<td colspan="2">
+  <b>puissance de sortie</b></td>
+<td width="30">&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr><td height="10"></td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  <u>String 1</u></td>
+<td width="70">&nbsp;</td>
+<td width="140">&nbsp;</td>
+<td width="95">
+  <u>L1</u></td>
+<td width="70">&nbsp;</td>
+<td width="30">&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_v1'] }}&nbsp;</td>
+<td width="140">&nbsp; V</td>
+<td width="100">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_a1'] }}&nbsp;</td>
+<td width="30">&nbsp; V</td>
+<td>&nbsp;</td></tr>
+<tr height="2"><td></td></tr>
+<tr valign="top" align="left">
+<td width="190">&nbsp;</td>
+<td width="100">
+  courant</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_v1'] }}&nbsp;</td>
+<td width="140">&nbsp; A</td>
+<td width="100">
+  puissance</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_w1'] }}&nbsp;</td>
+<td width="30">&nbsp; W</td>
+<td>&nbsp;</td></tr>
+<tr height="22"><td></td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  <u>String 2</u></td>
+<td width="70">&nbsp;</td>
+<td width="140">&nbsp;</td>
+<td width="100">
+  <u>L2</u></td>
+<td width="70">&nbsp;</td>
+<td width="30">&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_v2'] }}&nbsp;</td>
+<td width="140">&nbsp; V</td>
+<td width="100">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_a2'] }}&nbsp;</td>
+<td width="30">&nbsp; V</td>
+<td>&nbsp;</td></tr>
+<tr height="2"><td></td></tr>
+<tr valign="top" align="left">
+<td width="190">&nbsp;</td>
+<td width="100">
+  courant</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_v2'] }}&nbsp;</td>
+<td width="140">&nbsp; A</td>
+<td width="100">
+  puissance</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_w2'] }}&nbsp;</td>
+<td width="30">&nbsp; W</td>
+<td>&nbsp;</td></tr>
+<tr height="22"><td></td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  <u>String 3</u></td>
+<td width="70">&nbsp;</td>
+<td width="140">&nbsp;</td>
+<td width="100">
+  <u>L3</u></td>
+<td width="70">&nbsp;</td>
+<td width="30">&nbsp;</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td width="190"></td>
+<td width="100">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_v3'] }}&nbsp;</td>
+<td width="140">&nbsp;
+  V</td>
+<td width="95">
+  tension</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['pw_a3'] }}&nbsp;</td>
+<td width="30">&nbsp; V</td>
+<td>&nbsp;</td></tr>
+<tr height="2"><td></td></tr>
+<tr valign="top" align="left">
+<td width="190">&nbsp;</td>
+<td width="95">
+  courant</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_v3'] }}&nbsp;</td>
+<td width="140">&nbsp;
+A</td>
+<td width="95">
+  puissance</td>
+<td width="70" align="right" bgcolor="#FFFFFF">
+    {{ data['output_w3'] }}&nbsp;</td>
+<td width="30">&nbsp; W</td>
+<td>&nbsp;</td></tr>
+
+<tr><td height="15"></td></tr>
+<tr><td colspan="7">
+<table align="top" width="100%">
+<tbody><tr><td width="182"></td>
+<td><hr size="1"></td>
+</tr><tr><td height="5"></td></tr></tbody></table>
+</td></tr></tbody></table>
+<table cellspacing="0" cellpadding="0" width="770">
+<tbody><tr><td width="190"></td>
+<td><font face="Arial,Helvetica,Geneva,Sans-serif">
+<b>communication RS485</b></font></td></tr>
+<tr><td height="8"></td></tr>
+<tr><td width="190"></td>
+<td><font face="Arial,Helvetica,Geneva,Sans-serif">
+onduleur&nbsp;
+<input type="Text" name="edWrNr" value="255" size="3" maxlength="3">
+<input type="submit" value="afficher/actualiser">
+</font></td></tr><tr><td height="10"></td></tr>
+</tbody></table>
+</font>
+
+<hr>
+<table cellspacing="0" cellpadding="0" width="770">
+<tbody><tr><td height="5"></td></tr>
+<tr><td width="190"></td>
+<td width="330">
+<font face="Arial,Helvetica,Geneva,Sans-serif,sans-serif">
+<a href="#">historique</a>
+&nbsp; &nbsp; &nbsp;
+<a href="#">page info</a></font></td>
+<td align="right">
+<font face="Arial,Helvetica,Geneva,Sans-serif,sans-serif">
+<a href="#">réglages</a></font></td>
+<td width="50"></td>
+</tr></tbody></table>
+</form>
+
+<script src="/js/pv.js"></script>
+</body></html>

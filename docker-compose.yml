@@ -1,0 +1,10 @@
+
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pw-simulator
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
