@@ -25,7 +25,7 @@ def generate_fake_values_a():
 
 def get_values():
   pv_efficiency_percent = 0.9
-  
+
   # Génération de valeurs aléatoires de tension et d'ampérage
   tension_values = generate_fake_values_v()
   ampere_values = generate_fake_values_a()
@@ -62,17 +62,17 @@ def get_values():
 
   return {
       'time': refresh_timer,
-      'power': round(power_acw,2),
-      'pw_v1': round(pw_v1,2),
-      'pw_a1': round(pw_a1,2),
-      'output_v1': round(output_v1,2),
-      'output_w1': round(output_w1,2),
-      'pw_v2': round(pw_v2,2),
-      'pw_a2': round(pw_a2,2),
-      'output_v2': round(output_v2,2),
-      'output_w2': round(output_w2,2),
-      'pw_v3': round(pw_v3,2),
-      'pw_a3': round(pw_a3,2),
-      'output_v3': round(output_v3,2),
-      'output_w3': round(output_w3,2)
+      'power': '%.2f' % round(power_acw,2),
+      'pw_v1': '%.2f' % round(pw_v1,2),
+      'pw_a1': '%.2f' % round(pw_a1,2),
+      'output_v1': '%.2f' % round(output_v1,2),
+      'output_w1': '%.2f' % round(output_w1,2),
+      'pw_v2': '%.2f' % round(pw_v2,2),
+      'pw_a2': '%.2f' % round(pw_a2,2),
+      'output_v2': '%.2f' % round(output_v2,2),
+      'output_w2': '%.2f' % round(output_w2,2),
+      'pw_v3': '%.2f' % round(pw_v3,2),
+      'pw_a3': '%.2f' % round(pw_a3,2),
+      'output_v3': '%.2f' % round(output_v3,2),
+      'output_w3': '%.2f' % round(output_w3,2)
   }
